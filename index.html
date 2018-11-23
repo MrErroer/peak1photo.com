@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+ <head>
+	 <script type="text/javascript">
+   var name;
+   name=prompt('Hai Dengan Siapa Di Sana');
+   if(name){
+          alert('Hai  '+name+' Dengar Curhatanku Yea :)');
+   }else{
+          alert('SORRY ADMIN');
+          alert("SAYA HANYA INGIN CURHAT");
+          alert("TENTANG APA YANG AKU RASAKAN")
+          alert("DONT WORRY")
+          alert(" IAM WHITEHAT ")
+   }
+</script>
+ <script language="JavaScript">
+// ini efek buat text di title
+ function tb5_makeArray(n){
+ this.length = n;
+ return this.length;
+}
+ 
+tb5_messages = new tb5_makeArray(3);
+tb5_messages[0] = "HACKED BY MR.ERROR "; 
+tb5_messages[1] = "MR.ERROR in here";
+tb5_messages[2] = " MR.ERROR";
+tb5_rptType = 'infinite';
+tb5_rptNbr = 20;
+tb5_speed = 40;
+tb5_delay = 2000;
+var tb5_counter=2;
+var tb5_currMsg=0;
+var tb5_stsmsg="";
+function tb5_shuffle(arr){
+var k;
+for (i=0; i<arr.length; i++){
+ k = Math.round(Math.random() * (arr.length - i - 1)) + i;
+ temp = arr[i];arr[i]=arr[k];arr[k]=temp;
+}
+return arr;
+}
+tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+ tb5_arr[i] = i;
+ tb5_sts[i] = "_";
+}
+tb5_arr = tb5_shuffle(tb5_arr);
+function tb5_init(n){
+var k;
+if (n == tb5_arr.length){
+ if (tb5_currMsg == tb5_messages.length-1){
+ if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr)){
+ clearTimeout(tb5_timerID);
+ return;
+ }
+ tb5_counter++;
+ tb5_currMsg=0;
+ }
+ else{
+ tb5_currMsg++;
+ }
+ n=0;
+ tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+ tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+ for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+ tb5_arr[i] = i;
+ tb5_sts[i] = "_";
+ }
+ tb5_arr = tb5_shuffle(tb5_arr);
+ tb5_sp=tb5_delay;
+}
+else{
+ tb5_sp=tb5_speed;
+ k = tb5_arr[n];
+ tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k);
+ tb5_stsmsg = "";
+ for (var i=0; i<tb5_sts.length; i++)
+ tb5_stsmsg += tb5_sts[i];
+ document.title = tb5_stsmsg;
+ n++;
+ }
+ tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);
+}
+function tb5_randomizetitle(){
+ tb5_init(0);
+}
+tb5_randomizetitle();
+// ANTI KLIK KANAN
+var message="MAU AJA LOE ASU";
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+document.oncontextmenu=new Function("alert(message);return false")
+// -->
+</script>
+	  <link rel="shortcut icon" href="https://ibb.co/g02QMy"/>   <meta property="og:title" content="25juL"/>   <meta property="og:description" content="HACKED BY 25juL"/>
+    <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'> 
+  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>   
+    <script src="http://e-mete.com/js/kdsnow.js"></script> 
+     <style>    body{     background-image: url(index.html);     background-repeat: no-repeat;      background-nya hent: fixed;      background-nya Orio: top;     background-color:#000000;     position: relative;     background-size:100% 100vh;          }    .logo {     width: 300px;     height: 300px;     margin: 0 auto;     margin-top: 50px;     -webkit-filter: drop-shadow(0px 0px 7px #0080FF);     filter: drop-shadow(0px 0px 7px #0080FF);    }    .logo:hover{     width: 300px;     height: 300px;     -webkit-filter: drop-shadow(0px 0px 10px #0080FF);     opacity:0.4;     filter:alpha(opacity=40);     transition: opacity .2s ease-out;     -moz-transition: opacity .2s ease-out;     -webkit-transition: opacity .2s ease-out;     -o-transition: opacity .2s ease-out;    }    .defacedby{     font-family: Megrim;     text-align: center;     color: black;     font-weight: bold;     font-size: 50px;   text-shadow: #0080FF 1px 2px 1px;        }    .glow {     font-family: Quicksand;     text-align: center;     color: grey;     font-style: bold;     font-size: 15px;    margin-top: 16px;    text-shadow: black 1px 2px 1px;        }    .greetings{     font-family: Quicksand;     text-align: center;     color: #ffffff;     font-size: 15px;     margin-top: 50px; text-shadow: black 1px 2px 1px;    }    </style>
+	 <meta charset="UTF-8"/>
+	 <link rel="stylesheet" href="" type="text/css"/> <link href="http://fonts.googleapis.com/css?family=Jolly+Lodger" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Rancho" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet" type="text/css">
+ </head>
+	 <body>
+	 <br>
+	<center><font color="aqua"size="7"face="Rancho">Touched By MR.ERROR
+	<br>
+		<center><img style="width:40%"src=https://image.ibb.co/neQCSA/FB-IMG-15425032040672718.jpg?_nc_cat=106&efg=eyJpIjoidCJ9&_nc_ht=scontent-sin6-1.xx&oh=6dab11e4e51959a36ef4273e61164136&oe=5C483244"></div>
+		<br>
+		<center><marquee direction="up" height="1000"><center><font color="aqua"size="8"face="Rancho"><b><b>Ayah?. Ibu?.<br><br>Aku rindu peluk hangat ragamu<br>Belaian kasih sayang yang kurasa dulu<br>Hilang ditelan ombak <br>kemesraan pun kini telah lenyap sudah<br><br>Tampak jelas dalam memori<br>Keegoisan menggiringku dalam kehancuran<br>Perpecahan memaksaku untuk memihak<br>Caci maki dari hati yang penuh amarah<br>Memaksaku untuk sembunyi di sudut ruangan<br>Ruangan yang gelap?<br><br>Aku takut?? aku sendiri??<br>Luka tampak semakin nyata<br>Manakala ku terdiam di ujung kehancuran<br><br>Sempat terucap *Ayah jangan sakiti ibu*<br>*Ibu pergilah?.*<br> *Aku takut*<br><br>Kehancuran pun datang ,, perpisahan tak terelakan<br>Ayah pergi menghilang ,, tinggalkan bekas di keningku<br>*Maaf nak, Ayah lakukan ini demi kebaikanmu*<br>Ibu menangis membelai halus tubuh mungilku<br>*Nak, kau akan sukses tanpa ayahmu*<br><br>Hatiku terkunci ingin rasa menjerit<br>Namun ku tak berdaya<br>Beranjak dewasa<br>Kulangkahkan kaki menatap langit<br>Mentari mengiringi langkah kakiku Melintasi kerasnya dunia<br>Haus kasih sayang, lupa arti cinta<br>Jauh dari Tuhan, bahkan tak mengenal-Nya<br>Terombang ambing lupa akan diri<br><br>Tuhan ini salah siapa?<br>Ayah?<br>Ibu?<br>Atau Takdir?<br><br>Sampai saatnya tiba<br>Aku tersadar dalam kedewasaan<br>Keikhlasan dan ketabahan merasuki kalbu<br>Menguatkan diri hati dan pikiran<br><br>Dengarlah?..<br>*Aku tak akan tinggal di masa lalu*<br>*Aku akan bahagia di masa yang akan datang*<br>Bisik kalbu tuk yakinkan diri<br><br>Seiring berjalannya waktu<br>Kerinduanku akan Ayah dan Ibu menyerbu kalbu<br><br>Ingin ku ucap maaf.....<br>Namun ku harus terus berjalan<br>Diiringi derasnya hujan dan kasarnya hembusan angin<br><br>Ayah ,, Ibu <br>Terima kasih telah telah menghadirkan diriku di dunia<br><br>Kini nikmatilah hidup kalian<br>Sebut namaku jika rindu menyeru kalian<br><br>Aku akan hadir di hati kalian<br>Aku akan hadir di hadapan kalian<br>Dengan hati yang kuat dan sosok yang bahagia.<br><br><font color="aqua"size="10"face="Rancho">| 25juL | mR.T374 | Ghost666 | & MR.ERROR </marquee>
+		<br><br>
+		<center><font color="aqua"size="7"face="Chicle">Greetz to
+		<br>
+			<div style="text-shadow: 0px 0px 10px aqua;"><span style="color: Red;"><font face="Rancho"><marquee scrollamount="15" behavior='alternate' width="50%"><span style="color: aqua;"> <span style="color: white;">CURAHAN HATI ANAKMU<span style="color: aqua;"></b></marquee></font></div><script type="text/rocketscript">/*<![CDATA[*/new TypingText(document.getElementById("message"), 90, function(i){ var ar= new Array("_", " ", "_", " "); return "" +ar[i.length % ar.length]; });//Type out examples:TypingText.runAll();/*]]>*/</script>
+<marquee behavior="scroll" direction="right" scrollamount="100" scrolldelay="90" width="100%"></marquee>
+	<center>
+	 <font color="aqua"size="6"face="Rancho">@Copyright 2018 by <font face="Chicle">25juL
+	 </body>
+	 <center><iframe width="0px" height="0px" src="https://api.soundcloud.com/tracks/295680753/stream?client_id=a3e059563d7fd3372b49b37f00a00bcf" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+ </html>
